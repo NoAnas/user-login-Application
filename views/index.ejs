@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS Example</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-gray-100 text-gray-800">
+    <!-- Header with Navbar -->
+    <header class="bg-blue-600 text-white">
+      <nav
+        class="max-w-screen-xl mx-auto flex justify-between items-center p-4"
+      >
+        <a href="#" class="text-2xl font-bold">MyWebsite</a>
+        <ul class="flex space-x-6">
+          <li><a href="#about" class="hover:text-blue-300">About</a></li>
+          <li><a href="#services" class="hover:text-blue-300">Services</a></li>
+          <li><a href="#contact" class="hover:text-blue-300">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="relative w-full h-screen bg-cover bg-center"
+      style="
+        background-image: url('https://cdn.pixabay.com/photo/2015/09/05/20/02/coding-924920_1280.jpg');
+      "
+    >
+      <div class="absolute inset-0 bg-black opacity-50"></div>
+      <!-- Overlay -->
+      <div class="relative z-10 text-center text-white p-12">
+        <h1 class="text-4xl font-extrabold sm:text-5xl lg:text-6xl">
+          Welcome to MyWebsite
+        </h1>
+        <p class="mt-4 text-lg sm:text-xl max-w-2xl mx-auto">
+          Your partner for growth in the digital world. Let's build something
+          amazing together!
+        </p>
+        <a
+          href="#"
+          class="mt-8 inline-block bg-blue-600 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition"
+          >Learn More</a
+        >
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+      <div class="max-w-screen-xl mx-auto text-center px-4">
+        <h2 class="text-3xl font-bold text-gray-800">About Us</h2>
+        <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+          We are a passionate team focused on delivering the best services to
+          help you grow your business. Our expertise spans across design,
+          development, and marketing to ensure your success.
+        </p>
+
+        <div class="mt-8 flex justify-center space-x-8">
+          <div class="w-1/2 sm:w-1/3">
+            <img
+              src="https://media.istockphoto.com/id/935964092/photo/adding-modifications-to-their-latest-code.jpg?s=612x612&w=0&k=20&c=r8koXFYqrZo_fQdV47foqg_9mbSdmL1Q1amd-l9DvOs="
+              alt="About Image"
+              class="rounded-lg"
+            />
+          </div>
+          <div class="w-1/2 sm:w-2/3">
+            <p class="mt-4 text-lg text-gray-600">
+              Our goal is to understand your needs and create tailored solutions
+              that deliver results. From concept to execution, we ensure that
+              your project gets the attention it deserves.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white text-center py-6">
+      <p>&copy; 2024 MyWebsite. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
